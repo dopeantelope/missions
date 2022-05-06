@@ -12,16 +12,14 @@ body {
 }
 
 html {
-	font-size: 62.5%
+	font-size: 62.5%;
 }
 
-/******* HOME PAGE ********/
 
-.home-page {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
+/******* TEXT ********/
+
+
 
 h1 {
 	font-size: 6rem;
@@ -30,11 +28,51 @@ h1 {
 	font-family: "Montserrat Subrayada", Helvetica, sans-serif;
 }
 
+h2 {
+	font-size: 4rem;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+h3 {
+	font-size: 8rem;
+	margin: 2rem;
+	text-align: center;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	color: #03D9AC;
+}
+
 p {
 	font-size: 2rem;
 	margin: 2rem 0 4rem 0;
 	text-align: center;
 	line-height: 3rem;
+	font-weight: 200;
+}
+
+label {
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+/******* HOME PAGE ********/
+
+
+
+
+.home-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
 }
 
 button {
@@ -57,5 +95,83 @@ button {
 
 button:hover {
 	background: #03D9AC;
-	color: #182624;
+	color: #0e1312;
+}
+
+
+
+/******* HOST *******/
+
+input {
+	border-radius: 20px;
+	margin: 2rem 0;
+	height: 8rem;
+	width: 40rem;
+	font-size: 3rem;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+.slidecontainer {
+	display: flex;
+	justify-content: center;
+  width: 100%; /* Width of the outside container */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 2px;
+  border-radius: 5px;  
+  background: white;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #03D9AC;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+		font-size: 60%;
+	}
+	.slider {
+		width: 80%;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 340px) {
+  html {
+		font-size: 40%;
+	}
+}
+
+@media screen and (max-width: 270px) {
+  html {
+		font-size: 30%;
+	}
 }
