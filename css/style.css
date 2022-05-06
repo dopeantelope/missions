@@ -157,6 +157,7 @@ input {
 	.slider {
 		width: 80%;
 }
+}
 
 @media screen and (max-width: 400px) {
   html {
