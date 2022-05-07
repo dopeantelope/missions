@@ -150,13 +150,75 @@ input {
   cursor: pointer;
 }
 
+
+/****** JOIN GAME ********/
+
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input:focus {
+	outline: none;
+}
+
+
+/****** YOUR MISSIONS ******/
+
+.mission-statement {
+	font-weight: 600;
+}
+
+.mission-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	border: 1px solid #03D9AC;
+	color: white;
+	border-radius: 20px;
+	margin: 2rem 0;
+	padding: 2rem 4rem;
+	height: 15%;
+	width: 70%;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.mission-text {
+	text-align: center;
+	margin: 0;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+
+
+
+
+/****** MEDIA QUERIES********/
+
+
+@media screen and (max-width: 1000px) {
+  .mission-card {
+		width: 100%;
+	}
+}
+
+
 @media screen and (max-width: 500px) {
   html {
 		font-size: 60%;
 	}
 	.slider {
 		width: 80%;
-}
+	}
+	.mission-card {
+		width: 100%;
+		font-size: 1.4rem;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -174,5 +236,11 @@ input {
 @media screen and (max-width: 270px) {
   html {
 		font-size: 30%;
+	}
+
+	.mission-card {
+		width: 100%;
+		font-size: 1.4rem;
+		height: 10%;
 	}
 }
