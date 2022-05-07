@@ -23,7 +23,7 @@ html {
 
 h1 {
 	font-size: 6rem;
-	margin: 4rem;
+	margin: 4rem 0 6rem 0;
 	text-align: center;
 	font-family: "Montserrat Subrayada", Helvetica, sans-serif;
 }
@@ -42,6 +42,14 @@ h3 {
 	color: #03D9AC;
 }
 
+h4 {
+	font-size: 2.8rem;
+	margin: 2rem;
+	text-align: center;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	color: #03D9AC;
+}
+
 p {
 	font-size: 2rem;
 	margin: 2rem 0 4rem 0;
@@ -53,7 +61,7 @@ p {
 label {
 	font-size: 4rem;
 	text-align: center;
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 
 a {
@@ -113,7 +121,9 @@ input {
 	text-align: center;
 }
 
-
+.host-game-username {
+	margin-top: 2rem;
+}
 
 .slidecontainer {
 	display: flex;
@@ -157,10 +167,24 @@ input {
 form {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 input:focus {
 	outline: none;
+}
+
+span {
+	font-size: 1.4rem;
+	margin-top: 1.4rem;
+}
+
+.room-code {
+	margin: -2rem 0;
+}
+
+.bottom-button {
+	margin-top: 6rem;
 }
 
 
