@@ -195,13 +195,10 @@ span {
 }
 
 .icon {
-	display: flex;
-	margin-top: 4rem;
-	margin-left: 10rem;
 }
 
 .missions-header {
-	margin-bottom: 2rem;
+	margin-bottom: -5rem;
 }
 .mission-statement {
 	font-weight: 600;
