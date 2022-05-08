@@ -190,6 +190,16 @@ span {
 
 /****** YOUR MISSIONS ******/
 
+.header {
+	display: flex;
+}
+
+.icon {
+}
+
+.missions-header {
+	margin-bottom: -5rem;
+}
 .mission-statement {
 	font-weight: 600;
 }
@@ -217,6 +227,7 @@ span {
 	margin: 0;
 	font-size: 1.8rem;
 	line-height: 2.2rem;
+	word-wrap: anywhere;
 }
 
 
